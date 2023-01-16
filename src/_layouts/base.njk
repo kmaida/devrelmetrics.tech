@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/normalize.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}" />
-    <title>{{title}}</title>
+    <title>{{title}} | Keystone DevRel Metrics</title>
   </head>
   <body>
-    {% include "partials/_nav.njk" %}
-    <main>
-      {{content | safe}}
-    </main>
-    {% include "partials/_footer.njk" %}
+    {% include "partials/_header.html" %}
+    <div class="flex-container">
+      {% include "partials/_sidebar.html" %}
+      <main>
+        {{content | safe}}
+      </main>
+    </div>
+    {% include "partials/_footer.html" %}
   </body>
 </html>
