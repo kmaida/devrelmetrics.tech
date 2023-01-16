@@ -12,15 +12,15 @@
     <title>{{title}} | Keystone DevRel Metrics</title>
   </head>
   <body>
-    {% include "partials/_header.html" %}
-    <div class="flex-container">
+    <div class="container">
+      {% include "partials/_header.html" %}
       {% include "partials/_sidebar.html" %}
-      <main>
+      <main class="main">
         <div class="content-container">
           {{content | safe}}
         </div>
       </main>
-    </div>
     {% include "partials/_footer.html" %}
+    </div> <!-- /.container -->
   </body>
 </html>
