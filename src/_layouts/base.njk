@@ -16,7 +16,9 @@
     <div class="flex-container">
       {% include "partials/_sidebar.html" %}
       <main>
-        {{content | safe}}
+        <div class="content-container">
+          {{content | safe}}
+        </div>
       </main>
     </div>
     {% include "partials/_footer.html" %}

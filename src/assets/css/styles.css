@@ -59,6 +59,10 @@ aside {
 main {
   flex-grow: 1;
   height: var(--content-height);
+}
+.content-container {
+  margin: 0 auto;
+  max-width: 800px;
   overflow: auto;
   padding: 1em;
 }
